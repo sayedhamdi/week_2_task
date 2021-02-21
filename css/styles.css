@@ -1,0 +1,195 @@
+/* CSS RESET*/
+*,*{
+    padding:0;
+    margin:0;
+}
+*,*{
+    box-sizing:border-box;
+}
+/* Adding font family */
+@font-face {
+ font-family: "Open Sans";
+ src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+        url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+
+body{
+    font-family: Verdana;
+    font-size:15px;
+}
+nav{
+    z-index: 2;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:white;
+    
+    box-shadow: 0 4px 16px 0 grey;
+    padding:0 20px;
+}
+ul{
+    display:flex;
+    list-style-type: none;
+}
+ul li{
+    padding:20px 10px;
+}
+ul  li  a{
+
+    text-decoration:none;
+    color:black;
+}
+nav > a{
+    margin-left:20px;
+}
+nav  li:hover{
+    background-color:rgba(128, 128, 128, 0.541);
+}
+li{
+    
+    margin:0 10px;
+}
+.br-section b{
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    background:rgba(0, 0, 0 );
+    padding:10px 20px;
+    opacity:0.8;
+}
+.br-section span{
+    color:white;
+}
+.br-section {
+    display:flex;
+    position:relative;
+    z-index:-1;
+    height:100vh;
+    align-items: center;
+    justify-content:center;
+    font-size:36px;
+    background:url("../img/architect.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: cover;
+
+}
+.br-section span{
+    margin:auto 0;
+}
+hr{
+    border:0.1px solid rgb(226, 219, 219);
+}
+.container{
+    padding:0 40px;
+    margin:50px 0 0 0 ;
+}
+.projects h3{
+    margin: 0 0 20px 0;
+}
+.projects-images{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-top:30px;
+}
+.section h3{
+    margin:20px 0;
+}
+.img-card{
+    width:24%;
+    min-width: 300px;
+    display:inline-block;
+}
+
+.img-card img{
+    width:100%;
+    position:relative;
+    z-index: -2;
+}
+
+.img-card span{
+    position:absolute;
+    display:inline-block;
+    color:white;
+    background-color:black;
+    padding:5px;
+}
+
+.cards-about{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+}
+.about >p{
+    margin:40px 0;
+}
+.card-about{
+    box-sizing:border-box;
+    width:24%;
+    min-width:300px;
+    padding:5px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.card-about img {
+    width:100%;
+}
+.card-about span{
+    color:grey;
+    margin: 10px 0 10px 0;
+}
+.card-about p{
+    margin-bottom: 10px;
+}
+.card-about button{
+    width:100%;
+    padding: 5px 20px;
+    background-color:rgb(218, 213, 213);
+    border:none;
+    font-family: 15px;
+}
+form {
+    display:flex;
+    flex-direction: column;
+    margin:20px 0;
+}
+.contact{
+    margin-top:50px;
+}
+.contact> p{
+    margin:10px 0;
+}
+form input{
+    margin:5px 0;
+    width:100%;
+    padding:10px 10px;
+    font-size:15px;
+    background: none;
+    border:0.5px solid grey;
+    color:grey;   
+}
+.contact button{
+    color:white;
+    margin-top:20px;
+    background-color:black;
+    padding:10px 10px; 
+    width:150px;
+    border:none;
+}
+
+.map img{
+    width:100%;
+}
+.map {
+    margin:0 0 20px 0;
+}
+.footer{
+    height:100px;
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
